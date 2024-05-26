@@ -6,6 +6,7 @@
 
 #include "keymap_italian.h"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 // Layer definitions
@@ -90,10 +91,10 @@
         sym_layer {
             label = "Sym.";
             bindings = <
-&kp N1        &kp N2                &kp N3         &kp N4              &kp N5               &kp N6       &kp N7         &kp N8          &kp N9         &kp N0
-&kp TAB       &kp MINUS             &kp EQUAL      &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp LEFT     &kp DOWN       &kp UP_ARROW    &kp RIGHT      &kp SEMI
-&kp DELETE    &kp LC(LA(DELETE))    &kp IT_RPAR    &kp IT_RBRC         &kp IT_RBKT          &kp IT_AT    &kp IT_EXCL    &kp IT_DQUOT    &kp IT_PLUS    &kp IT_FSLH
-                                                   &mo 3               &mo 0                &trans       &trans
+&kp N1        &kp N2                &kp N3           &kp N4                &kp N5               &kp N6      &kp N7      &kp N8          &kp N9           &kp N0
+&kp TAB       &kp MINUS             &kp EQUAL        &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp LEFT    &kp DOWN    &kp UP_ARROW    &kp RIGHT        &kp SEMI
+&kp DELETE    &kp LS(LG(DELETE))    &kp LC(LS(R))    &trans                &trans               &trans      &trans      &trans          &kp PAGE_DOWN    &kp PAGE_UP
+                                                     &kp LC(LA(DELETE))    &trans               &trans      &trans
             >;
         };
 
@@ -102,10 +103,10 @@
         ext_layer {
             label = "Mods";
             bindings = <
-&kp ESC      &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_PAUSE    &kp PG_UP       &kp HOME    &kp UP      &kp END      &kp CAPS
-&sk LALT     &sk LGUI      &sk LSHIFT    &sk LCTRL     &kp RALT       &kp PG_DN       &kp LEFT    &kp DOWN    &kp RIGHT    &kp DEL
-&kp LC(Z)    &kp LC(X)     &kp LC(C)     &kp TAB       &kp LC(V)      &kp LC(BSPC)    &kp BSPC    &trans      &trans       &trans
-                                         &trans        &kp LCTRL      &kp ENTER       &mo 3
+&kp F1        &kp F2          &kp F3          &kp F4          &kp F5          &kp F6        &kp F7        &kp F8          &kp F9           &kp F10
+&sk F11       &sk F12         &trans          &trans          &trans          &kp LEFT      &kp DOWN      &kp UP_ARROW    &kp RIGHT        &trans
+&bt BT_CLR    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_NXT    &bt BT_PRV    &trans          &kp PAGE_DOWN    &kp PAGE_UP
+                                              &trans          &trans          &trans        &mo 3
             >;
         };
 
@@ -114,10 +115,10 @@
         fnc_layer {
             label = "FRow";
             bindings = <
-&kp F1      &kp F2      &kp F3        &kp F4       &kp F5      &kp F6     &kp F7     &kp F8             &kp F9    &kp F10
-&sk LALT    &sk LGUI    &sk LSHIFT    &sk LCTRL    &kp RALT    &kp F11    &kp F12    &kp PRINTSCREEN    &trans    &trans
-&none       &none       &none         &none        &none       &none      &none      &none              &none     &none
-                                      &none        &none       &none      &none
+&sys_reset    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans        &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&none         &none     &none     &none     &none     &none     &none     &none     &none     &none
+                                  &none     &none     &none     &none
             >;
         };
 
