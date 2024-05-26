@@ -47,11 +47,11 @@
         // sometimes my device thinks a modifier is being held down
         // pressing all modifiers fixes it.
 
-        unstick: unstick {
-            label = "ZM_unstick";
+        M1: M1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
+            bindings = <&kp LC(LA(DELETE))>;
+            label = "M1";
         };
     };
 
@@ -59,37 +59,14 @@
         compatible = "zmk,combos";
 
         // both right thumb keys
-
-        combo_accent {
-            timeout-ms = <200>;
-            key-positions = <32 33>;
-            bindings = <&mo 0>;
-        };
-
         // internal-left & external-right thumb keys
-
-        combo_sym2 {
-            timeout-ms = <200>;
-            key-positions = <31 33>;
-            bindings = <&mo 0>;
-        };
-
         // both left thumb keys
-
-        combo_settings {
-            timeout-ms = <200>;
-            key-positions = <30 31>;
-            bindings = <&mo 0>;
-        };
-
         // left index & middle fingers (home-row)
         // hold control & space for Adobe workflow
 
-        combo_ctrl_space {
-            timeout-ms = <200>;
-            key-positions = <12 13>;
-            bindings = <&kp LC(SPACE)>;
-            layers = <0>;
+        Esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
