@@ -93,7 +93,7 @@
             bindings = <
 &kp N1        &kp N2           &kp N3           &kp N4                &kp N5               &kp N6      &kp N7      &kp N8          &kp N9           &kp N0
 &kp TAB       &kp MINUS        &kp EQUAL        &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &kp LEFT    &kp DOWN    &kp UP_ARROW    &kp RIGHT        &kp SEMI
-&kp DELETE    &kp LS(LG(S))    &kp LC(LS(R))    &kp K_CALCULATOR      &trans               &trans      &trans      &trans          &kp PAGE_DOWN    &kp PAGE_UP
+&kp DELETE    &kp LS(LG(S))    &kp LC(LS(R))    &kp C_AL_CALC         &to 3                &trans      &trans      &trans          &kp PAGE_DOWN    &kp PAGE_UP
                                                 &kp LC(LA(DELETE))    &trans               &trans      &trans
             >;
         };
@@ -115,10 +115,10 @@
         fnc_layer {
             label = "FRow";
             bindings = <
-&sys_reset    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&trans        &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-&none         &none     &none     &none     &none     &none     &none     &none     &none     &none
-                                  &none     &none     &none     &none
+&kp ESCAPE    &kp BACKSPACE    &trans       &trans       &trans    &kp SLASH        &kp KP_NUMBER_7    &kp KP_NUMBER_8    &kp KP_NUMBER_9    &kp MINUS
+&kp TAB       &trans           &trans       &trans       &trans    &kp ASTERISK     &kp KP_NUMBER_4    &kp KP_NUMBER_5    &kp KP_NUMBER_6    &kp PLUS
+&kp LC(A)     &kp LC(X)        &kp LC(C)    &kp LC(V)    &to 0     &kp DOT          &kp KP_NUMBER_1    &kp KP_NUMBER_2    &kp KP_NUMBER_3    &kp KP_ENTER
+                                            &none        &none     &kp BACKSPACE    &kp KP_NUMBER_0
             >;
         };
 
