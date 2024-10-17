@@ -106,7 +106,7 @@
 &kp F1        &kp F2          &kp F3          &kp F4          &kp F5          &kp F6        &kp F7        &kp F8          &kp F9           &kp F10
 &sk F11       &sk F12         &trans          &trans          &trans          &kp LEFT      &kp DOWN      &kp UP_ARROW    &kp RIGHT        &trans
 &bt BT_CLR    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_NXT    &bt BT_PRV    &trans          &kp PAGE_DOWN    &kp PAGE_UP
-                                              &trans          &trans          &trans        &trans
+                                              &trans          &mo 4           &trans        &trans
             >;
         };
 
@@ -115,10 +115,19 @@
         fnc_layer {
             label = "FRow";
             bindings = <
-&kp ESCAPE    &kp BACKSPACE    &trans       &trans          &sys_reset    &kp KP_MULTIPLY    &kp KP_NUMBER_7    &kp KP_NUMBER_8    &kp KP_NUMBER_9    &kp KP_MINUS
-&kp TAB       &trans           &trans       &trans          &trans        &kp KP_SLASH       &kp KP_NUMBER_4    &kp KP_NUMBER_5    &kp KP_NUMBER_6    &kp KP_PLUS
-&kp LC(A)     &kp LC(X)        &kp LC(C)    &kp LC(V)       &to 0         &kp KP_DOT         &kp KP_NUMBER_1    &kp KP_NUMBER_2    &kp KP_NUMBER_3    &kp KP_ENTER
-                                            &kp LEFT_ALT    &none         &kp BACKSPACE      &kp KP_NUMBER_0
+&kp ESCAPE    &kp BACKSPACE    &trans       &trans          &trans    &kp KP_MULTIPLY    &kp KP_NUMBER_7    &kp KP_NUMBER_8    &kp KP_NUMBER_9    &kp KP_MINUS
+&kp TAB       &trans           &trans       &trans          &trans    &kp KP_SLASH       &kp KP_NUMBER_4    &kp KP_NUMBER_5    &kp KP_NUMBER_6    &kp KP_PLUS
+&kp LC(A)     &kp LC(X)        &kp LC(C)    &kp LC(V)       &to 0     &kp KP_DOT         &kp KP_NUMBER_1    &kp KP_NUMBER_2    &kp KP_NUMBER_3    &kp KP_ENTER
+                                            &kp LEFT_ALT    &none     &kp BACKSPACE      &kp KP_NUMBER_0
+            >;
+        };
+
+        Reset_Layer {
+            bindings = <
+&sys_reset     &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &sys_reset
+&bootloader    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &bootloader
+&trans         &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                                   &trans    &trans    &trans    &trans
             >;
         };
 
