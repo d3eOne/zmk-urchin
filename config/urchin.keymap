@@ -115,10 +115,10 @@
         fnc_layer {
             label = "FRow";
             bindings = <
-&kp ESCAPE    &kp BACKSPACE    &trans       &trans          &trans    &kp KP_MULTIPLY    &kp KP_NUMBER_7    &kp KP_NUMBER_8    &kp KP_NUMBER_9    &kp KP_MINUS
-&kp TAB       &trans           &trans       &trans          &trans    &kp KP_SLASH       &kp KP_NUMBER_4    &kp KP_NUMBER_5    &kp KP_NUMBER_6    &kp KP_PLUS
-&kp LC(A)     &kp LC(X)        &kp LC(C)    &kp LC(V)       &to 0     &kp KP_DOT         &kp KP_NUMBER_1    &kp KP_NUMBER_2    &kp KP_NUMBER_3    &kp KP_ENTER
-                                            &kp LEFT_ALT    &none     &kp BACKSPACE      &kp KP_NUMBER_0
+&kp ESCAPE    &kp BACKSPACE    &trans       &trans          &sys_reset    &kp KP_MULTIPLY    &kp KP_NUMBER_7    &kp KP_NUMBER_8    &kp KP_NUMBER_9    &kp KP_MINUS
+&kp TAB       &trans           &trans       &trans          &trans        &kp KP_SLASH       &kp KP_NUMBER_4    &kp KP_NUMBER_5    &kp KP_NUMBER_6    &kp KP_PLUS
+&kp LC(A)     &kp LC(X)        &kp LC(C)    &kp LC(V)       &to 0         &kp KP_DOT         &kp KP_NUMBER_1    &kp KP_NUMBER_2    &kp KP_NUMBER_3    &kp KP_ENTER
+                                            &kp LEFT_ALT    &none         &kp BACKSPACE      &kp KP_NUMBER_0
             >;
         };
 
